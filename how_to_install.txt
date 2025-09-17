@@ -1,0 +1,18 @@
+1. Vérifier que vous avez Python 3.7 ou une version supérieure installée.
+2. Télécharger le code depuis GitHub :
+   git clone https://github.com/cszn/DPIR.git
+3. Accéder au dossier du projet :
+   cd DPIR
+4. Créer un environnement virtuel (recommandé) :
+   python -m venv venv
+   Puis l’activer :
+     - Sous Windows : venv\Scripts\activate
+     - Sous Linux / macOS : source venv/bin/activate
+5. Installer les dépendances nécessaires :
+   pip install -r requirements.txt
+6. Télécharger les modèles pré-entraînés (si nécessaire) :
+   python main_download_pretrained_models.py
+7. Pour exécuter un exemple (par ex. débruitage d’image) :
+   python main_dpir_denoising.py --input chemin_image_entree --output chemin_image_sortie --model chemin_du_modele
+8. Vérifier que les chemins des fichiers et des modèles sont corrects.
+9. Pour tester rapidement, utilisez une image de test disponible dans le dossier “testsets” du projet.
